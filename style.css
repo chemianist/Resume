@@ -16,3 +16,28 @@ body {
   font-family: 'Inter', sans-serif;
   transition: background 0.3s, color 0.3s;
 }
+
+/* === Artifact Modal Fixes === */
+
+.modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.visual-container {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.artifact-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
