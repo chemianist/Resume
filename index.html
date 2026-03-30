@@ -376,7 +376,7 @@
             <div class="tags"><span>Machine Learning</span><span>Neural Networks</span><span>AI Communication</span><span>Deep Learning</span></div>
             <a class="project-link" data-modal="modal-neural-networks">View Artifact →</a>
           </div>
-          
+
         </div>
       </section>
     </main>
@@ -439,73 +439,127 @@
   <div class="modal-content">
     <span class="close-modal">&times;</span>
 
-    <h2>Understanding Neural Networks in Machine Learning</h2>
-    <p><strong>Artifact Type:</strong> Educational explainer + visual communication artifact</p>
+    <h2>Understanding Neural Networks</h2>
+    <p><em>A simple, visual explanation of how machines learn from data</em></p>
 
-    <p><strong>Introduction:</strong> This artifact explains neural networks in a simple, audience-friendly way. It was created to demonstrate not only technical understanding of a foundational AI concept, but also the ability to communicate that concept clearly to learners who may not have a strong machine learning background.</p>
+    <hr>
 
-    <h3>Overview</h3>
-    <p>A neural network is a machine learning system designed to learn patterns from examples. Instead of relying only on fixed rules written by a programmer, it improves by looking at many examples, making predictions, comparing those predictions to the correct answers, and adjusting itself over time.</p>
+    <h3>1. The Big Idea</h3>
+    <p>
+      A neural network is a system that learns patterns from examples. Instead of following fixed rules,
+      it improves by making predictions, checking how wrong it was, and adjusting itself over time.
+    </p>
 
-    <p>You can think of a neural network as a group of connected decision-makers working together. Each unit, or “neuron,” receives information, performs a small calculation, and passes its result forward. One neuron by itself does very little, but when many neurons are arranged in layers, they can solve complicated problems.</p>
+    <p>
+      You can think of it like learning a skill: practice → feedback → improvement.
+    </p>
 
-    <h3>How It Works</h3>
-    <p>Neural networks are typically organized into three main parts: an input layer, one or more hidden layers, and an output layer.</p>
-
-    <ul>
-      <li><strong>Input layer:</strong> receives the raw data, such as pixel values in an image or numerical values in a dataset.</li>
-      <li><strong>Hidden layers:</strong> process the information step by step, finding useful patterns and relationships.</li>
-      <li><strong>Output layer:</strong> produces the final result, such as “cat” or “not cat,” or a numerical prediction.</li>
-    </ul>
-
-    <p>During training, the network looks at many labeled examples. At first, its predictions may be poor. The system then compares its output to the correct answer, calculates how far off it was, and adjusts its internal weights to reduce future error. Repeating this process many times helps the network gradually improve.</p>
-
-    <h3>Simple Example</h3>
-    <p>Imagine teaching a computer to recognize whether an image contains a cat. Rather than programming exact rules like “look for whiskers” or “look for pointed ears,” a neural network learns those features by seeing many examples of cats and non-cats.</p>
-
-    <p>Early layers might detect basic visual features such as edges or shapes. Deeper layers combine those simple features into more meaningful patterns, such as facial structure or body outline. By the time the information reaches the final layer, the model can make a prediction about whether the image contains a cat.</p>
-
-    <h3>Why Neural Networks Matter</h3>
-    <p>Neural networks are powerful because they can handle tasks that are difficult to solve with fixed rules alone. They are especially useful when patterns are complex, subtle, or too numerous for manual feature design.</p>
-
-    <p>Common applications include:</p>
-    <ul>
-      <li>Image recognition</li>
-      <li>Speech recognition</li>
-      <li>Language translation</li>
-      <li>Recommendation systems</li>
-      <li>Medical image analysis</li>
-    </ul>
-
-    <h3>Key Idea</h3>
-    <p>The central idea behind a neural network is simple: it learns from examples, improves through feedback, and becomes more accurate through repetition. Even though the underlying mathematics can be complex, the basic learning process is similar to how people improve at a skill through practice and correction.</p>
-
-    <h3>Purpose of This Artifact</h3>
-    <p>This artifact was designed for a general academic or professional audience that may be interested in AI but not deeply trained in machine learning. The goal was to communicate a technical topic clearly, accurately, and visually enough that a non-specialist could understand the main idea without being overwhelmed by jargon.</p>
-
-    <h3>Skills Demonstrated</h3>
-    <ul>
-      <li>Technical understanding of foundational machine learning concepts</li>
-      <li>Ability to translate complex material into accessible language</li>
-      <li>Audience-centered communication</li>
-      <li>Instructional and explanatory writing</li>
-    </ul>
-
-    <h3>Tools Used</h3>
-    <p>Course materials, ChatGPT for drafting/refinement, and AI image-generation tools for optional visual support.</p>
-
-    <h3>Value Proposition</h3>
-    <p>This artifact demonstrates the ability to bridge technical knowledge and communication skill. In AI-related work, it is often not enough to understand a concept internally; one must also explain it clearly to collaborators, students, managers, or interdisciplinary teams.</p>
-
-    <h3>Relevance</h3>
-    <p>As AI becomes more widely used across research, industry, and education, clear explanation of core concepts becomes increasingly valuable. This artifact reflects the ability to communicate foundational AI ideas in a way that supports learning, collaboration, and informed decision-making.</p>
-
-    <div class="modal-publication">
-      <strong>Artifact Focus:</strong><br>
-      Neural networks, machine learning communication, audience-centered explanation, and foundational AI literacy.
+    <div class="visual-placeholder">
+      [Placeholder: Simple diagram showing input → hidden layers → output]
     </div>
 
-    <a href="#" class="project-link">Download PDF →</a>
+    <hr>
+
+    <h3>2. How Information Flows</h3>
+    <p>
+      Neural networks are made of layers:
+    </p>
+
+    <ul>
+      <li><strong>Input layer:</strong> receives raw data (e.g., image pixels)</li>
+      <li><strong>Hidden layers:</strong> process and transform the data step by step</li>
+      <li><strong>Output layer:</strong> produces the final prediction</li>
+    </ul>
+
+    <p>
+      Each neuron performs a small calculation and passes its result forward.
+      Many small decisions combine into one final answer.
+    </p>
+
+    <div class="visual-placeholder">
+      [Placeholder: Layer-by-layer flow illustration]
+    </div>
+
+    <hr>
+
+    <h3>3. Learning from Mistakes</h3>
+    <p>
+      At first, the model makes poor predictions. It then compares its prediction to the correct answer
+      using a <strong>loss function</strong>, which measures the error.
+    </p>
+
+    <p>
+      The model uses this error to adjust its internal parameters through a process called
+      <strong>backpropagation</strong>, gradually improving accuracy.
+    </p>
+
+    <p>
+      This process repeats many times:
+    </p>
+
+    <p><strong>Predict → Compare → Adjust → Repeat</strong></p>
+
+    <div class="visual-placeholder">
+      [Placeholder: Training loop diagram]
+    </div>
+
+    <hr>
+
+    <h3>4. Example: Recognizing a Cat</h3>
+    <p>
+      Imagine training a model to recognize cats in images.
+    </p>
+
+    <ul>
+      <li>Early layers detect simple features like edges and colors</li>
+      <li>Middle layers combine them into shapes and textures</li>
+      <li>Final layers recognize higher-level patterns like faces</li>
+    </ul>
+
+    <p>
+      Instead of being told what a cat looks like, the network learns from many examples.
+    </p>
+
+    <div class="visual-placeholder">
+      [Placeholder: Cat vs not-cat classification example]
+    </div>
+
+    <hr>
+
+    <h3>5. Why Neural Networks Are Powerful</h3>
+    <ul>
+      <li>They can handle complex, high-dimensional data</li>
+      <li>They automatically learn useful features</li>
+      <li>They improve with more data and training</li>
+    </ul>
+
+    <p>
+      This makes them useful for tasks like image recognition, speech processing, and recommendation systems.
+    </p>
+
+    <hr>
+
+    <h3>6. Key Takeaway</h3>
+    <p>
+      A neural network is not “programmed” with exact rules. Instead, it learns from experience,
+      improves through feedback, and builds understanding step by step.
+    </p>
+
+    <p>
+      Even though the math can be complex, the core idea is simple:
+    </p>
+
+    <p><strong>Learn from examples, improve from mistakes, repeat.</strong></p>
+
+    <hr>
+
+    <h3>Reflection (Learning Focus)</h3>
+    <p>
+      This artifact demonstrates the ability to explain a technical concept in a clear, structured way.
+      By breaking neural networks into intuitive steps and using analogies, the explanation becomes
+      accessible to learners without a technical background.
+    </p>
+
   </div>
 </div>
 
