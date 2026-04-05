@@ -377,6 +377,13 @@
             <a class="project-link" data-modal="modal-neural-networks">Read more →</a>
           </div>
 
+          <div class="project-card">
+            <h3>Bias in AI for Computational Chemistry</h3>
+            <p>Educational artifact explaining how bias enters AI/ML workflows in computational chemistry, from dataset construction and labeling to model evaluation and deployment.</p>
+            <div class="tags"><span>Computational Chemistry</span><span>AI/ML</span><span>Bias</span><span>Scientific Modeling</span></div>
+            <a class="project-link" data-modal="modal-bias-comp-chem">View Artifact →</a>
+          </div>
+
         </div>
       </section>
     </main>
@@ -412,25 +419,15 @@
   <div id="modal-ml-dl" class="modal">
   <div class="modal-content">
     <h2>Machine Learning vs Deep Learning Comparison</h2>
-
     <p><strong>Introduction:</strong> This project presents a comparative analysis of machine learning (ML) and deep learning (DL), focusing on when each approach is most appropriate. The analysis is grounded in real-world applications and emphasizes practical decision-making in data-driven environments.</p>
-
     <p><strong>Description:</strong> Two representative examples are used to illustrate the differences between ML and DL: customer churn prediction as a traditional machine learning task and image recognition as a deep learning application. Each example is analyzed to explain why the selected approach is suitable and why the alternative is less effective.</p>
-
     <p><strong>Objective:</strong> The goal of this project is to develop a clear understanding of the fundamental differences between ML and DL, and to build the ability to select the appropriate method based on problem characteristics such as data type, scale, and complexity.</p>
-
     <p><strong>Process:</strong> The work involved reviewing course materials and external resources, selecting relevant real-world examples, and systematically comparing the methodologies. The analysis focused on feature engineering requirements, computational demands, model complexity, and performance considerations. Findings were then organized into a structured and concise report.</p>
-
     <p><strong>Tools:</strong> Microsoft Word (converted to PDF), course materials, and academic references on artificial intelligence and machine learning.</p>
-
     <p><strong>Value Proposition:</strong> This project demonstrates the ability to critically evaluate AI methodologies and select appropriate techniques for different types of problems. It highlights practical reasoning skills that are essential for real-world data science and AI applications.</p>
-
     <p><strong>Unique Value:</strong> The work combines theoretical understanding with practical examples, providing a clear and accessible explanation of complex concepts. It emphasizes not only how ML and DL work, but also when and why each should be used.</p>
-
     <p><strong>Relevance:</strong> Understanding the distinction between machine learning and deep learning is essential for professionals working in AI, data science, and related fields. This project highlights how these approaches apply to structured versus unstructured data and different levels of problem complexity.</p>
-
     <p><strong>References:</strong> Course materials, AI textbooks, and relevant academic and industry articles.</p>
-
     <a href="#" class="project-link">Download PDF</a>
   </div>
   </div>
@@ -551,6 +548,130 @@
 
     <p><strong>Learn from examples, improve from mistakes, repeat.</strong></p>
 
+  </div>
+</div>
+
+<div id="modal-bias-comp-chem" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+
+    <h2>Bias in AI for Computational Chemistry</h2>
+    <p><em>A practical explainer on how human and data bias can shape scientific AI models</em></p>
+
+    <hr>
+
+    <h3>1. Why This Matters</h3>
+    <p>
+      AI models in computational chemistry are often treated as objective tools, but they
+      inherit the assumptions built into their training data, feature choices, and evaluation
+      methods. In chemistry, that matters because model outputs may influence which molecules
+      are prioritized, which materials are screened, and which scientific conclusions seem most
+      promising.
+    </p>
+
+    <div class="visual-container">
+      <img src="assets/images/placeholder-bias-overview.png" alt="Placeholder for overview of bias in computational chemistry AI" class="artifact-img">
+      <p class="caption">Figure 1. Placeholder: overview of where bias can enter an AI workflow in computational chemistry.</p>
+    </div>
+
+    <hr>
+
+    <h3>2. Where Bias Enters the Workflow</h3>
+    <p>
+      Bias can appear at multiple stages of a computational chemistry pipeline:
+    </p>
+    <ul>
+      <li><strong>Dataset construction:</strong> training data may overrepresent certain molecule classes, chemistries, or property ranges.</li>
+      <li><strong>Label generation:</strong> computed labels can reflect method limitations, approximation choices, or inconsistent reference standards.</li>
+      <li><strong>Feature design:</strong> descriptors may emphasize some chemical behaviors while missing others.</li>
+      <li><strong>Model evaluation:</strong> aggregate accuracy can hide poor performance on underrepresented chemical families.</li>
+      <li><strong>Deployment decisions:</strong> a model may be used outside the domain where it was trained and validated.</li>
+    </ul>
+
+    <div class="visual-container">
+      <img src="assets/images/placeholder-workflow-bias-points.png" alt="Placeholder for workflow stages where bias enters" class="artifact-img">
+      <p class="caption">Figure 2. Placeholder: bias checkpoints from dataset creation to deployment.</p>
+    </div>
+
+    <hr>
+
+    <h3>3. Example: Molecular Property Prediction</h3>
+    <p>
+      Imagine training a model to predict solubility, binding affinity, or electronic properties.
+      If the training set contains mostly small organic molecules with limited functional-group
+      diversity, the model may appear accurate overall but perform poorly on more unusual
+      compounds, charged systems, or larger molecules.
+    </p>
+
+    <p>
+      In that case, the issue is not only model quality, but also representation. The model has
+      learned patterns from a narrow chemical space and may generalize poorly beyond it.
+    </p>
+
+    <div class="visual-container">
+      <img src="assets/images/placeholder-chemical-space.png" alt="Placeholder for chemical space coverage diagram" class="artifact-img">
+      <p class="caption">Figure 3. Placeholder: narrow vs diverse chemical space coverage in training data.</p>
+    </div>
+
+    <hr>
+
+    <h3>4. Human Bias in Scientific AI Decisions</h3>
+    <p>
+      Human bias does not disappear when AI is introduced. Scientists still decide which data to
+      include, which methods to trust, which metrics to optimize, and which predictions deserve
+      follow-up. Those choices can favor familiar chemistries, well-studied systems, or outcomes
+      that align with existing expectations.
+    </p>
+
+    <p>
+      In computational chemistry, this can happen when researchers repeatedly benchmark against
+      a narrow set of standard molecules, or when promising but less familiar regions of chemical
+      space are excluded because they do not resemble historical training examples.
+    </p>
+
+    <hr>
+
+    <h3>5. How to Reduce Bias</h3>
+    <p>
+      Reducing bias in computational chemistry AI requires both technical and leadership decisions:
+    </p>
+    <ul>
+      <li><strong>Audit the dataset:</strong> examine which molecule classes, property ranges, and chemistries are over- or underrepresented.</li>
+      <li><strong>Use subgroup evaluation:</strong> report performance across molecule families, charge states, or application domains rather than only overall error.</li>
+      <li><strong>Document assumptions:</strong> make method limits, label uncertainty, and descriptor choices explicit.</li>
+      <li><strong>Validate domain fit:</strong> confirm that the model is being used within the chemical space it actually learned.</li>
+      <li><strong>Encourage interdisciplinary review:</strong> combine chemical intuition, data science, and domain expertise when interpreting model outputs.</li>
+    </ul>
+
+    <div class="visual-container">
+      <img src="assets/images/placeholder-mitigation-strategies.png" alt="Placeholder for strategies to reduce bias" class="artifact-img">
+      <p class="caption">Figure 4. Placeholder: practical strategies for reducing bias in chemistry AI workflows.</p>
+    </div>
+
+    <hr>
+
+    <h3>6. Key Takeaway</h3>
+    <p>
+      AI does not remove human bias from computational chemistry. It can scale it, hide it, or
+      amplify it if the data and evaluation process are not carefully designed. A strong chemistry
+      AI workflow is not only accurate, but also transparent about what the model has seen, where
+      it performs reliably, and where caution is needed.
+    </p>
+
+    <p>
+      In simple terms: <strong>better science requires both better models and better judgment.</strong>
+    </p>
+
+    <hr>
+
+    <h3>Reflection (Learning Focus)</h3>
+    <p>
+      This artifact was designed to connect recent course themes on human bias in AI/ML to my own
+      field of computational chemistry. Rather than discussing bias in a generic way, it translates
+      the issue into domain-specific examples such as molecular property prediction, dataset
+      representativeness, and model evaluation across chemical subgroups. The goal is to show both
+      technical understanding and the ability to explain AI risks in a scientific context.
+    </p>
   </div>
 </div>
 
